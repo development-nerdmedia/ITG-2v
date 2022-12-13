@@ -522,14 +522,28 @@ section.socios .content .card div {
   flex-direction: column;
   align-items: center; }
   section.socios .content .card div a {
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
     text-decoration: none;
     color: #fff;
     font-family: var(--fuente-Ubuntu);
     font-weight: 500;
     font-size: 20px;
     border-radius: 20px;
-    border: 2px solid #FDFDFD; }
+    /* border: 2px solid #FDFDFD;  */
+  }
+
+  section.socios .content .card div a button{
+    background-color: transparent;
+    border: 2px solid #FDFDFD;
+  }
+
+  section.socios .content .card div a button::before{
+    background: #dbdbdb4d;
+  }
+
+  section.socios .content .card div a button::after{
+    background: #d3d3d366;
+  }
 
 section.socios .content .card p::after {
   content: '';
@@ -2792,7 +2806,7 @@ section.competenciasAWS .slider-competenciasAWS .item button img{
 section.competenciasAWS .slider-competenciasAWS .item p{
   max-height: 85px;
   overflow: hidden;
-  transition: 1s linear;
+  transition: 0.8s linear;
 }
 
 section.competenciasAWS .slider-competenciasAWS .item span.menos{
@@ -2825,7 +2839,9 @@ section.competenciasAWS .slider-competenciasAWS .slick-next,
 section.certificaciones .slider-certificacionesAWS .slick-prev,
 section.certificaciones .slider-certificacionesAWS .slick-next,
 section.designacionesMicro .slider-designacionesMicro .slick-next,
-section.designacionesMicro .slider-designacionesMicro .slick-prev{
+section.designacionesMicro .slider-designacionesMicro .slick-prev,
+section.designacionesAWS .contentDesignaciones .slick-next,
+section.designacionesAWS .contentDesignaciones .slick-prev{
   top: -76px;
 }
 
@@ -2834,14 +2850,16 @@ section.certificaciones .slider-certificacionesAWS .slick-prev::before,
 section.competenciasAWS .slider-competenciasAWS .slick-next:before,
 section.certificaciones .slider-certificacionesAWS .slick-next::before,
 section.designacionesMicro .slider-designacionesMicro .slick-next::before,
-section.designacionesMicro .slider-designacionesMicro .slick-prev::before {
+section.designacionesMicro .slider-designacionesMicro .slick-prev::before,
+section.designacionesAWS .contentDesignaciones .slick-next::before,
+section.designacionesAWS .contentDesignaciones .slick-prev::before {
   content: none;
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-next,
 section.certificaciones .slider-certificacionesAWS .slick-next,
 section.designacionesMicro .slider-designacionesMicro .slick-next,
-section.designacionesMicro .slider-designacionesMicro .slick-prev {
+section.designacionesAWS .contentDesignaciones .slick-next {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider.svg);
   background-repeat: no-repeat !important;
   background-size: 100% !important;
@@ -2853,13 +2871,15 @@ section.designacionesMicro .slider-designacionesMicro .slick-prev {
 }
 section.competenciasAWS .slider-competenciasAWS .slick-next:hover,
 section.certificaciones .slider-certificacionesAWS .slick-next:hover,
-section.designacionesMicro .slider-designacionesMicro .slick-next:hover {
+section.designacionesMicro .slider-designacionesMicro .slick-next:hover,
+section.designacionesAWS .contentDesignaciones .slick-next:hover {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider-hover.svg);
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-prev,
 section.certificaciones .slider-certificacionesAWS .slick-prev,
-section.designacionesMicro .slider-designacionesMicro .slick-prev {
+section.designacionesMicro .slider-designacionesMicro .slick-prev,
+section.designacionesAWS .contentDesignaciones .slick-prev {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider.svg);
   background-repeat: no-repeat !important;
   background-size: 100% !important;
@@ -2873,7 +2893,8 @@ section.designacionesMicro .slider-designacionesMicro .slick-prev {
 
 section.competenciasAWS .slider-competenciasAWS .slick-prev:hover,
 section.certificaciones .slider-certificacionesAWS .slick-prev:hover,
-section.designacionesMicro .slider-designacionesMicro .slick-prev:hover {
+section.designacionesMicro .slider-designacionesMicro .slick-prev:hover,
+section.designacionesAWS .contentDesignaciones .slick-prev:hover {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider-hover.svg);
 }
 
@@ -3078,6 +3099,7 @@ section.designacionesMicro .slider-designacionesMicro .item .name p{
 
 section.designacionesMicro .slider-designacionesMicro .item .name img{
   pointer-events: none;
+  width: 18px;
 }
 
 section.designacionesMicro .slider-designacionesMicro .item .info{  
@@ -4007,8 +4029,8 @@ section.novedades .slider-novedades {
 @media (max-width: 1154px) {
   section.socios .content .card div {
     align-items: flex-start; }
-  section.socios .content .card a span, section.socios .content .card div a {
-    margin-left: 30px; }
+  /* section.socios .content .card a span, section.socios .content .card div a {
+    margin-left: 30px; } */
   section.socios .content .card p {
     margin-bottom: 10px; }
   section.fondo-socios::before {
