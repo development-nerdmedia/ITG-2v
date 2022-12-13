@@ -86,8 +86,8 @@ document.addEventListener("click", (e) => {
 
     }
 
-    if (e.target.closest(".slider-competenciasAWS .item button")) {
-        e.target.parentElement.querySelector("p").classList.add("mostrar");
+    if (e.target.closest(".slider-competenciasAWS .item button") || e.target.closest(".slider-designacionesMicro .item .name")) {
+        e.target.parentElement.classList.toggle("mostrar");
     }
 
 })
@@ -950,11 +950,11 @@ $('.slider-competenciasAWS').slick({
 
     infinite: true,
 
-    speed: 300,
+    // speed: 300,
 
     dots: false,
 
-    autoplay: true,
+    // autoplay: true,
 
     slidesToShow: 2,
 
@@ -982,11 +982,27 @@ $('.contentDesignaciones').slick({
 
     infinite: true,
 
-    // speed: 300,
+    speed: 300,
 
     dots: false,
 
-    // autoplay: true,
+    autoplay: true,
+
+    slidesToShow: 3,
+
+    slidesToScroll: 1,
+
+});
+
+$('.slider-designacionesMicro').slick({
+
+    infinite: true,
+
+    speed: 300,
+
+    dots: false,
+
+    autoplay: true,
 
     slidesToShow: 3,
 

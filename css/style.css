@@ -1788,6 +1788,10 @@ section.fondo-socios .content {
   padding-top: 241.39px;
   display: flex; }
 
+  section.fondo-socios.aws .content{
+    align-items: center;
+  }
+
 section.fondo-socios .content .part1 {
   width: 50%; }
 
@@ -1802,6 +1806,25 @@ section.fondo-socios .content .part1 p {
 
 section.fondo-socios .content .part2 {
   width: 50%; }
+
+  section.fondo-socios.sociointerna .content .part1{
+    width: 52%;
+  }
+
+  section.fondo-socios.sociointerna .content .part2{
+    width: 48%;
+  }
+
+  section.fondo-socios.sociointerna .content .part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.fondo-socios.sociointerna .content .part2 img{
+    width: auto;
+    position: initial;
+  }
 
 section.respaldo {
   padding-top: 140px;
@@ -2772,26 +2795,53 @@ section.competenciasAWS .slider-competenciasAWS .item p{
   transition: 1s linear;
 }
 
-section.competenciasAWS .slider-competenciasAWS .item p.mostrar{
+section.competenciasAWS .slider-competenciasAWS .item span.menos{
+  display: none;
+}
+
+section.competenciasAWS .slider-competenciasAWS .item.mostrar p{
     max-height: 100vh;
+}
+
+section.competenciasAWS .slider-competenciasAWS .item.mostrar button img{
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+
+section.competenciasAWS .slider-competenciasAWS .item button span{
+  pointer-events: none;
+}
+
+section.competenciasAWS .slider-competenciasAWS .item.mostrar span.mas{
+  display: none;
+}
+
+section.competenciasAWS .slider-competenciasAWS .item.mostrar span.menos{
+  display: block;
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-prev, 
 section.competenciasAWS .slider-competenciasAWS .slick-next,
 section.certificaciones .slider-certificacionesAWS .slick-prev,
-section.certificaciones .slider-certificacionesAWS .slick-next {
+section.certificaciones .slider-certificacionesAWS .slick-next,
+section.designacionesMicro .slider-designacionesMicro .slick-next,
+section.designacionesMicro .slider-designacionesMicro .slick-prev{
   top: -76px;
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-prev::before,
 section.certificaciones .slider-certificacionesAWS .slick-prev::before,
 section.competenciasAWS .slider-competenciasAWS .slick-next:before,
-section.certificaciones .slider-certificacionesAWS .slick-next::before {
+section.certificaciones .slider-certificacionesAWS .slick-next::before,
+section.designacionesMicro .slider-designacionesMicro .slick-next::before,
+section.designacionesMicro .slider-designacionesMicro .slick-prev::before {
   content: none;
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-next,
-section.certificaciones .slider-certificacionesAWS .slick-next {
+section.certificaciones .slider-certificacionesAWS .slick-next,
+section.designacionesMicro .slider-designacionesMicro .slick-next,
+section.designacionesMicro .slider-designacionesMicro .slick-prev {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider.svg);
   background-repeat: no-repeat !important;
   background-size: 100% !important;
@@ -2802,12 +2852,14 @@ section.certificaciones .slider-certificacionesAWS .slick-next {
   transition: 0.2s linear;
 }
 section.competenciasAWS .slider-competenciasAWS .slick-next:hover,
-section.certificaciones .slider-certificacionesAWS .slick-next:hover {
+section.certificaciones .slider-certificacionesAWS .slick-next:hover,
+section.designacionesMicro .slider-designacionesMicro .slick-next:hover {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider-hover.svg);
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-prev,
-section.certificaciones .slider-certificacionesAWS .slick-prev {
+section.certificaciones .slider-certificacionesAWS .slick-prev,
+section.designacionesMicro .slider-designacionesMicro .slick-prev {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider.svg);
   background-repeat: no-repeat !important;
   background-size: 100% !important;
@@ -2820,16 +2872,22 @@ section.certificaciones .slider-certificacionesAWS .slick-prev {
 }
 
 section.competenciasAWS .slider-competenciasAWS .slick-prev:hover,
-section.certificaciones .slider-certificacionesAWS .slick-prev:hover {
+section.certificaciones .slider-certificacionesAWS .slick-prev:hover,
+section.designacionesMicro .slider-designacionesMicro .slick-prev:hover {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider-hover.svg);
 }
 
 section.certificaciones,
-section.serviciosAWS,
+section.serviciosSocioInterna,
 section.designacionesAWS,
 section.areaSoluciones,
 section.tecnologias{
   padding: 70px 0;
+}
+
+section.certificaciones .slider-certificacionesAWS .slick-track{
+  display: flex;
+  align-items: center;
 }
 
 section.certificaciones .slider-certificacionesAWS .item{
@@ -2843,26 +2901,36 @@ section.certificaciones .slider-certificacionesAWS .item img{
   width: 100%;
 }
 
-section.serviciosAWS .contentServicios{
+section.serviciosSocioInterna .contentServicios{
   margin-top: 50px;
-  padding: 0 5vw;
+  /* padding: 0 5vw; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 60px;
 }
 
-section.serviciosAWS .contentServicios .item .images{
+section.serviciosSocioInterna.aws .contentServicios{
+  padding: 0 5vw;  
+  grid-gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+section.serviciosSocioInterna p{
+  width: 80%;
+}
+
+section.serviciosSocioInterna .contentServicios .item .images{
   display: flex;
   justify-content: center;
 }
 
-section.serviciosAWS .contentServicios .item .images img {
+section.serviciosSocioInterna .contentServicios .item .images img {
   width: 80%;
   margin-bottom: 10px;
   position: relative;
 }
 
-section.serviciosAWS .contentServicios .item .images lottie-player {
+section.serviciosSocioInterna .contentServicios .item .images lottie-player {
   width: 80% !important;
   display: none;
   height: auto !important;
@@ -2870,15 +2938,15 @@ section.serviciosAWS .contentServicios .item .images lottie-player {
   position: relative;
 }
 
-section.serviciosAWS .contentServicios .item:hover lottie-player {
+section.serviciosSocioInterna .contentServicios .item:hover lottie-player {
   display: block;
 }
 
-section.serviciosAWS .contentServicios .item:hover img {
+section.serviciosSocioInterna .contentServicios .item:hover img {
   display: none;
 }
 
-section.serviciosAWS .contentServicios .item h3{
+section.serviciosSocioInterna .contentServicios .item h3{
   font-family: var(--fuente-Exo);
   font-weight: 700;
   font-size: 25px;
@@ -2887,7 +2955,7 @@ section.serviciosAWS .contentServicios .item h3{
   position: relative;
 }
 
-section.serviciosAWS .contentServicios .item h3::after {
+section.serviciosSocioInterna .contentServicios .item h3::after {
   content: '';
   background-color: var(--color-verde);
   width: 100%;
@@ -2971,6 +3039,91 @@ section.tecnologias .marquee-with-options .item img {
   width: 90%;
 }
 
+section.designacionesMicro {
+  padding-top: 140px;
+  padding-bottom: 70px;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item{
+  border: 3px solid var(--color-celeste);
+  border-radius: 10px;
+  margin: 0 30px;
+}
+section.designacionesMicro .slider-designacionesMicro .item .image{
+  padding: 50px 0;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .image img{
+  max-height: 102px;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .name{
+  background-color: var(--color-celeste);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  cursor: pointer;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .name p{
+  color: #fff;
+  font-family: var(--fuente-Exo);
+  font-weight: 700;
+  font-size: 25px;  
+  pointer-events: none;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .name img{
+  pointer-events: none;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .info{  
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s linear;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .info .content{
+  padding: 25px 30px;
+}
+section.designacionesMicro .slider-designacionesMicro .item .info p{
+  font-weight: 500;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .info ul li{
+  list-style: none;
+  position: relative;
+  font-family: var(--fuente-Ubuntu);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-gris);
+  padding-left: 40px;
+  margin: 15px;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .info ul li::before {
+  content: '';
+  background-image: url(../icons/vineta-input.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  width: 31px;
+  height: 11.35px;
+}
+
+
+
+section.designacionesMicro .slider-designacionesMicro .item.mostrar .info{
+  max-height: 100vh;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item.mostrar .name img{
+  transform: rotate(180deg);
+}
 
 
 @media (min-width: 2000px) {
