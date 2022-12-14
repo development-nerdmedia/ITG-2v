@@ -395,7 +395,18 @@ header.sticky::after{
   right: 0; }
 
 section.home {
-  height: 50vw; }
+  height: 50vw; 
+  margin-top: 80px;}
+
+  section.home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #E7F3FA;
+  }
 
 section.home lottie-player.escritorio {
   position: absolute !important;
@@ -1218,6 +1229,10 @@ section.fondo-interna .bg-interna {
   overflow: hidden;
   z-index: -3; }
 
+  section.fondo-interna.blog .bg-interna{
+    top: 80px;
+  }
+
 section.fondo-interna .bg-interna img {
   min-height: 100%;
   position: absolute;
@@ -1236,7 +1251,7 @@ section.fondo-interna.trabajo {
 section.fondo-interna.trabajo .bg-interna {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 80px;
   height: calc(100% + 190px);
   width: 100%;
   overflow: hidden;
@@ -1413,7 +1428,7 @@ section.valores .grid-valores .item p {
 section.home-servicios-interna .content {
   display: flex;
   align-items: center;
-  padding-top: 241.39px; }
+  padding-top: 285.39px; }
 
 section.home-servicios-interna .content .part1 {
   width: 50%;
@@ -1774,13 +1789,16 @@ section.tarjeta-contacto .content .part1 h3 {
   color: #fff; }
 
 section.fondo-socios {
-  height: 710px; }
+  height: 710px; 
+  margin-top: 58px;}
+
 
 section.fondo-socios::before {
   content: '';
   position: absolute;
   width: 100%;
-  height: 65px;
+  height: 125px;
+  top: 0;
   background-color: #E7F3FA; }
 
 section.fondo-socios img {
@@ -1795,7 +1813,7 @@ section.fondo-socios lottie-player {
   width: 1920px !important;
   height: auto !important;
   z-index: -3;
-  top: 65px;
+  top: 123px;
   right: 0; }
 
 section.fondo-socios .content {
@@ -1986,7 +2004,18 @@ section.competencias .slider-competencias .slick-next.slick-disabled:hover {
   background-image: url(https://www.itgsolutions.com.pe/wp-content/themes/twentytwenty/assets/icons/flecha-slider.svg); }
 
 section.trabajo {
+  margin-top: 80px;
   height: auto !important; }
+
+  section.trabajo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #E7F3F9;
+  }
 
 section.trabajo img.fondo {
   top: -197px; }
@@ -2136,7 +2165,18 @@ section.thanks-page p {
 
 section.contact-page {
   background: linear-gradient(180deg, #E7F3F9 0%, rgba(231, 243, 249, 0) 63.02%);
+  margin-top: 80px;
   padding-bottom: 30px; }
+
+  section.contact-page::before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: #E7F3F9;
+  }
 
 section.contact-page .container {
   max-width: 800px; }
@@ -2510,7 +2550,18 @@ section.main-article .content2 .part2 p {
 
 section.blog {
   height: auto !important;
+  margin-top: 80px;
   padding-bottom: 70px; }
+
+  section.blog::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #E7F3F9;
+    height: 80px;
+  }  
 
 section.blog .fondo {
   top: -350px; }
@@ -2759,8 +2810,37 @@ section.beneficios .content .part2 .mostrar {
 .menupage.open {
   transform: translateX(0%); }
 
+  section.fondo-socios.sociointerna img{
+    top: 58px;
+  }
+
 section.fondo-socios lottie-player.responsive {
   display: none; }
+
+section.fondo-socios.sociointerna .responsive{
+  display: none;
+}
+
+section.fondo-socios.sociointerna .bg-socioInterna{
+  position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% + 419px);
+    width: 100%;
+    overflow: hidden;
+    z-index: -3;
+}
+
+section.fondo-socios.sociointerna .bg-socioInterna img{
+  min-height: 100%;
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -3;
+  min-width: 100%;
+  width: initial;
+}
 
 section.competenciasAWS{
   padding-top: 140px;
@@ -3210,7 +3290,7 @@ section.novedades .slider-novedades {
     content: '';
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 200px;
     background-color: #e7f3fa; }
   section.home .content {
     transform: translateY(38px); } }
@@ -3222,10 +3302,10 @@ section.novedades .slider-novedades {
     content: '';
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 155px;
     background-color: #d5ebf48f; }
   section.fondo-socios lottie-player {
-    top: 100px; }
+    top: 155px; }
   section.fondo-socios lottie-player {
     width: 1554px !important; }
   section.home .content h1 {
@@ -3256,6 +3336,9 @@ section.novedades .slider-novedades {
     width: 36.02vw; } }
 
 @media (max-width: 1440px) {
+  section.fondo-socios {
+    margin-top: 100px;
+  }
   header.sticky::after{
     top: 107px;
   }
@@ -3294,9 +3377,9 @@ section.novedades .slider-novedades {
   section.fondo-socios {
     height: 590px; }
   section.fondo-socios lottie-player {
-    top: 67px; }
+    top: 163px; }
   section.fondo-socios::before {
-    height: 67px; }
+    height: 163px; }
   section.beneficios {
     padding-top: 140px;
     padding-bottom: 50px; }
@@ -3341,6 +3424,13 @@ section.novedades .slider-novedades {
   section.home-servicios-interna .content,
   section.fondo-socios .content {
     padding-top: 200px; }
+
+    section.home-nosotros .content{
+      padding-top: 260px;
+    }
+    section.home-servicios-interna .content{
+      padding-top: 285.39px;
+    }
   section.trabajo .content {
     padding: 200px 0;
     padding-bottom: 100px; }
@@ -3394,12 +3484,13 @@ section.novedades .slider-novedades {
     font-size: 50px; }
   section.home {
     height: 54vw;
-    position: relative; }
+    /* position: relative;  */
+  }
   section.home::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 130px;
     background-color: #e7f3fa; }
   section.home lottie-player.escritorio {
     margin-top: 50px; }
@@ -3712,15 +3803,45 @@ section.novedades .slider-novedades {
   section.home .content h1 {
     font-size: 45px; }
   section.home {
-    height: 56vw; }
+    height: 56vw; 
+  }
   p {
     font-size: 18px; }
   section.home::before {
-    height: 72px; }
+    height: 150px; }
   section.home lottie-player.escritorio {
     margin-top: 65px; }
   section.home .content {
     transform: translateY(76px); } }
+
+@media (max-width: 1180px) {  
+  section.home::before {
+    height: 72px; }
+    section.home {
+      margin-top: 0;
+    }
+    section.home-nosotros .content {
+      padding-top: 200px;
+  }
+  section.home-servicios-interna .content{
+    padding-top: 200px;
+  }
+  section.fondo-socios {
+    margin-top: 0;
+  }
+  section.fondo-socios lottie-player {
+    top: 67px;
+  }
+  section.blog{
+    margin-top: 0px;
+  }
+  section.trabajo{
+    margin-top: 0px;
+  }
+  section.contact-page{
+    margin-top: 0;
+  }
+}
 
 .zoom150 section.socios .content .card a {
   margin-top: 25px; }
