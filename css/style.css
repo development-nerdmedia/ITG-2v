@@ -2832,9 +2832,9 @@ section.fondo-socios.sociointerna .bg-socioInterna{
 }
 
 section.fondo-socios.sociointerna .bg-socioInterna img{
-  min-height: 100%;
+  /* min-height: 100%; */
   position: absolute;
-  top: -160px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -3;
@@ -3011,9 +3011,10 @@ section.serviciosSocioInterna .contentServicios{
 }
 
 section.serviciosSocioInterna.aws .contentServicios{
+  display: flex;
   padding: 0 5vw;  
   grid-gap: 100px;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 section.serviciosSocioInterna p{
@@ -3086,6 +3087,7 @@ section.areaSoluciones .contentList ul{
   -moz-columns: 2; 
   list-style: none;
   margin-top: 50px;
+  grid-gap: 80px;
 }
 
 section.areaSoluciones .contentList ul li{
@@ -3100,6 +3102,10 @@ section.areaSoluciones .contentList ul li{
 
 section.areaSoluciones .contentList ul li:first-child{
   margin-top: 0;
+}
+
+section.areaSoluciones .contentList ul li:last-child{
+  margin-bottom: 0;
 }
 
 section.areaSoluciones .contentList ul li::before {
@@ -3146,9 +3152,14 @@ section.designacionesMicro {
 }
 
 section.designacionesMicro .slider-designacionesMicro .item{
+  /* border: 3px solid var(--color-celeste);
+  border-radius: 10px; */
+  margin: 0 30px;
+}
+
+section.designacionesMicro .slider-designacionesMicro .item .content{
   border: 3px solid var(--color-celeste);
   border-radius: 10px;
-  margin: 0 30px;
 }
 section.designacionesMicro .slider-designacionesMicro .item .image{
   padding: 50px 0;
@@ -3190,6 +3201,8 @@ section.designacionesMicro .slider-designacionesMicro .item .info{
 
 section.designacionesMicro .slider-designacionesMicro .item .info .content{
   padding: 25px 30px;
+  border: none;
+  border-radius: 0;
 }
 section.designacionesMicro .slider-designacionesMicro .item .info p{
   font-weight: 500;
@@ -3247,7 +3260,7 @@ section.designacionesMicro .slider-designacionesMicro .item.mostrar .name img{
     right: 264px; } }
 
 @media (max-width: 1870px) and (max-width: 1800px) {
-  s
+  
 section.novedades .slider-novedades {
     padding-left: 7.5vw; }
   section.novedades .slider-novedades .slick-next {
@@ -3260,6 +3273,9 @@ section.novedades .slider-novedades {
     width: 1739px !important; }
   section.fondo-socios {
     height: 647px; }
+    section.fondo-socios.sociointerna{
+      height: 710px;
+    }
   section.novedades .slider-novedades {
     padding-left: 6vw; }
   section.novedades .slider-novedades .slick-next {
@@ -3274,6 +3290,8 @@ section.novedades .slider-novedades {
     right: 85px; }
   section.novedades .slider-novedades .slick-prev {
     right: 164px; } }
+
+
 
 @media (max-width: 1680px) {
   section.novedades .slider-novedades .slick-next {
@@ -3304,6 +3322,9 @@ section.novedades .slider-novedades {
     width: 100%;
     height: 155px;
     background-color: #d5ebf48f; }
+    section.fondo-socios.sociointerna::before{
+      background-color: #E7F3FA;
+    }
   section.fondo-socios lottie-player {
     top: 155px; }
   section.fondo-socios lottie-player {
@@ -3529,7 +3550,62 @@ section.novedades .slider-novedades {
   section.novedades {
     padding: 50px 0; }
   footer {
-    padding-top: 100px; } }
+    padding-top: 100px; } 
+
+  
+
+  section.fondo-socios.sociointerna {
+    height: 669px;
+  }
+
+  section.fondo-socios.sociointerna .content .part2{
+    justify-content: flex-end;
+  }
+
+  section.competenciasAWS,
+  section.designacionesMicro{
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+  section.certificaciones, section.serviciosSocioInterna, section.designacionesAWS, section.areaSoluciones, section.tecnologias {
+    padding: 50px 0;
+  }
+
+  section.serviciosSocioInterna p {
+    width: 100%;
+  }
+
+
+  section.competenciasAWS .slider-competenciasAWS .item {
+    padding: 0 25px;
+  }
+
+  section.certificaciones .slider-certificacionesAWS .item{
+    padding: 0 21px;
+  }
+
+  section.serviciosSocioInterna.aws .contentServicios {
+    padding: 0;
+    grid-gap: 115px;
+  }
+
+  section.designacionesAWS .contentDesignaciones{
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  section.designacionesMicro .slider-designacionesMicro .item{
+    margin: 0 16px;
+  }
+
+  section.serviciosSocioInterna .contentServicios{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* END 1440 */
+
+}
 
 @media (max-width: 1400px) {
   header nav .navigation ul li.fex ul li a {
@@ -3539,6 +3615,7 @@ section.novedades .slider-novedades {
     height: 100%;
   }
 }
+
 
 @media (max-width: 1310px) {
   header::before {
@@ -3592,6 +3669,16 @@ section.novedades .slider-novedades {
 @media (max-width: 1300px) {
   section.socios .content .animation {
     margin: 0 39px; } }
+
+@media (max-width: 1272px) {
+  section.fondo-socios.sociointerna .bg-socioInterna img{
+    top: 15px;
+  }
+  section.fondo-socios.sociointerna {
+    height: 630px;
+  }
+}
+
 
 @media (max-width: 1180px) {
   header::before {
@@ -3669,7 +3756,8 @@ section.novedades .slider-novedades {
     padding-bottom: 50px; }
   section.competencias .slider-competencias .item h3 {
     font-size: 22px; }
-  section.aliados .marquee-with-options .item {
+  section.aliados .marquee-with-options .item,
+  section.tecnologias .marquee-with-options .item {
     margin: 0 30px; }
   section.respaldo .content .part2 lottie-player,
   section.respaldo .content .part2 img,
@@ -3812,7 +3900,28 @@ section.novedades .slider-novedades {
   section.home lottie-player.escritorio {
     margin-top: 65px; }
   section.home .content {
-    transform: translateY(76px); } }
+    transform: translateY(76px); } 
+    
+
+    section.competenciasAWS .slider-competenciasAWS .item p {
+      max-height: 75px;
+    }
+    
+    section.competenciasAWS,
+    section.designacionesMicro {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+    section.serviciosSocioInterna.aws .contentServicios{
+      grid-gap: 30px;
+    }
+
+    section.areaSoluciones .contentList ul{
+      grid-gap: 40px;
+    }
+
+  /* END 1280 */  
+}
 
 @media (max-width: 1180px) {  
   section.home::before {
@@ -3840,6 +3949,9 @@ section.novedades .slider-novedades {
   }
   section.contact-page{
     margin-top: 0;
+  }
+  section.fondo-socios.sociointerna .bg-socioInterna img {
+    top: -80px;
   }
 }
 
@@ -4286,7 +4398,8 @@ section.novedades .slider-novedades {
     margin: 0 10px; }
   section.competencias .slider-competencias .item img {
     width: 90%; }
-  section.aliados .marquee-with-options .item img {
+  section.aliados .marquee-with-options .item img,
+  section.tecnologias .marquee-with-options .item img {
     width: 70%; }
   section.beneficios .content .part1 lottie-player {
     max-width: 371px;
@@ -4431,7 +4544,39 @@ section.novedades .slider-novedades {
   section.home .content {
     width: 50%; }
   section.home .content p {
-    width: 90%; } }
+    width: 90%; } 
+  
+    section.competenciasAWS .slider-competenciasAWS {
+      padding-top: 10px;
+    }
+
+    section.competenciasAWS .slider-competenciasAWS .item h2{
+      margin-bottom: 20px;
+    }
+
+    section.competenciasAWS .slider-competenciasAWS .slick-prev, 
+    section.competenciasAWS .slider-competenciasAWS .slick-next,
+    section.certificaciones .slider-certificacionesAWS .slick-prev, 
+    section.certificaciones .slider-certificacionesAWS .slick-next,
+    section.designacionesAWS .contentDesignaciones .slick-next, 
+    section.designacionesAWS .contentDesignaciones .slick-prev{
+      top: -73px;
+    }
+
+    section.certificaciones .slider-certificacionesAWS .item {
+      padding: 0 16px;
+    }
+    section.serviciosSocioInterna.aws .contentServicios{
+      grid-gap: 30px;
+    }
+
+    section.designacionesAWS .contentDesignaciones .item img{
+      max-width: 195px;
+    }
+    section.designacionesMicro .slider-designacionesMicro .slick-list{
+      margin: 0 6vw;
+    }
+}
 
 @media (max-width: 980px) {
   section.main-article .content2 .part1 .redes img {
@@ -4555,7 +4700,11 @@ section.novedades .slider-novedades {
     width: 0%; }
   section.fondo-socios .content .part1 {
     width: 100%;
-    text-align: center; } }
+    text-align: center; } 
+    section.fondo-socios.sociointerna .content .part1{
+      text-align: start;
+    }
+  }
 
 @media (max-width: 900px) {
   section.home-servicios-interna .content .part1 p,
@@ -4611,7 +4760,42 @@ section.novedades .slider-novedades {
   section.beneficios .content .part2 {
     padding-left: 0; }
   section.beneficios .content .part2 ul {
-    padding-left: 46px; } }
+    padding-left: 46px; } 
+  
+    section.fondo-socios.sociointerna .content{
+      flex-direction: column;
+    }
+    section.fondo-socios.sociointerna .content .part1 {
+      width: 100%;
+      text-align: center;
+    }
+    section.fondo-socios.sociointerna .content .part2 {
+      width: 100%;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    section.fondo-socios.sociointerna .bg-socioInterna img {
+      top: -20px;
+    }
+    section.fondo-socios.sociointerna {
+      height: 695px;
+    }
+    section.designacionesAWS .contentDesignaciones .item img {
+      max-width: 190px;
+    }
+    section.areaSoluciones .contentList ul{
+      columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+    }    
+    section.designacionesMicro .slider-designacionesMicro .item .content{
+      max-width: 380px;
+    }
+    section.designacionesMicro .slider-designacionesMicro .item{
+      display: flex;
+      justify-content: center;
+    }
+}
 
 @media (max-width: 865px) {
   section.video-youtube iframe {
@@ -4626,7 +4810,15 @@ section.novedades .slider-novedades {
     grid-template-columns: repeat(9, 1fr); }
   footer .part2 .redes,
   .footer-contacto2 .part2 .redes {
-    grid-template-columns: repeat(11, 1fr); } }
+    grid-template-columns: repeat(11, 1fr); } 
+
+    section.competenciasAWS .slider-competenciasAWS .item {
+      padding: 0 10px;
+    }    
+    section.competenciasAWS .slider-competenciasAWS .item.slick-active::after{
+      content: none;
+    }
+}
 
 @media (max-width: 820px) {
   section.home {
@@ -4893,13 +5085,55 @@ section.home-servicios-interna .content .part2 {
     padding: 40px 0;
     padding-top: 80px; }
   section.novedades {
-    padding: 40px 0; } }
+    padding: 40px 0; } 
+
+    section.competenciasAWS,
+    section.designacionesMicro {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+
+    section.competenciasAWS h2,
+    section.certificaciones h2,
+    section.designacionesAWS h2,
+    section.novedades h2,
+    section.designacionesMicro h2{
+      max-width: 73%;
+    }
+
+    section.serviciosSocioInterna.aws .contentServicios {
+      grid-gap: 32px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    section.serviciosSocioInterna .contentServicios .item {
+      width: 47%;
+    }
+    section.serviciosSocioInterna.micro .contentServicios .item {
+      width: 100%;
+    }
+    section.serviciosSocioInterna.micro .contentServicios {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 65px;
+      margin: 0 7vw;
+      margin-top: 50px;
+    }
+  }
 
 @media (max-width: 726px) {
   footer .bg-footer {
     height: 1432px; }
   section.video-youtube iframe {
-    height: 311px !important; } }
+    height: 311px !important; } 
+
+    section.fondo-socios.sociointerna .bg-socioInterna img {
+      top: 18px;
+    }
+    section.fondo-socios.sociointerna {
+      height: 735px;
+    }
+  
+  }
 
 @media (max-width: 650px) {
   section.footer-contacto .flex .oficina .redes {
@@ -4919,13 +5153,43 @@ section.home-servicios-interna .content .part2 {
   .menupage ul li ul {
     padding-left: 0; }
   .menupage ul li.container-submenu {
-    margin-bottom: 0; } }
+    margin-bottom: 0; } 
+
+    section.competenciasAWS h2, section.certificaciones h2, section.designacionesAWS h2, section.novedades h2,
+    section.designacionesMicro h2 {
+      max-width: 65%;
+  }
+  
+}
 
 @media (max-width: 600px) {
   section.competencias .slider-competencias .item img {
     width: 60%; }
   section.video-youtube iframe {
-    margin: 0; } }
+    margin: 0; } 
+  
+    section.certificaciones .slider-certificacionesAWS .item {
+      padding: 0 13px;
+  }
+  section.serviciosSocioInterna.micro .contentServicios{
+    margin: 0;
+    margin-top: 50px;
+    grid-gap: 45px;
+  }
+}
+
+@media (max-width: 592px) {
+  section.serviciosSocioInterna .contentServicios .item {
+    width: 100%;
+    max-width: 291px;
+    margin: 0 20px;
+  }
+  section.serviciosSocioInterna.micro .contentServicios .item{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
 
 @media (max-width: 578px) {
   .slider-empresas .slick-prev, .slider-empresas .slick-next {
@@ -4936,7 +5200,11 @@ section.home-servicios-interna .content .part2 {
     grid-template-columns: repeat(1, 1fr); }
   section.valores .grid-valores .item lottie-player,
   section.valores .grid-valores .item img {
-    width: 50%; } }
+    width: 50%; } 
+  section.designacionesAWS .contentDesignaciones .item img {
+    max-width: 80%;
+  }
+}
 
 @media (max-width: 550px) {
   section.socios .content .card div a {
@@ -5036,7 +5304,10 @@ section.home-servicios-interna .content .part2 {
     width: 170px !important; }
   section.novedades .slider-novedades {
     padding: 0 24px; }
-  section.competencias .slider-competencias .slick-prev {
+  section.competencias .slider-competencias .slick-prev,
+  section.competenciasAWS .slider-competenciasAWS .slick-prev,
+  section.certificaciones .slider-certificacionesAWS .slick-prev,
+  section.designacionesAWS .contentDesignaciones .slick-prev {
     right: 61px; }
   header nav .navigation ul li.contacto {
     display: none; }
@@ -5062,7 +5333,22 @@ section.home-servicios-interna .content .part2 {
     text-decoration: none; }
   footer,
   .footer-contacto2 {
-    margin-bottom: 52px; } }
+    margin-bottom: 52px; } 
+  
+    section.designacionesMicro .slider-designacionesMicro .slick-list {
+      margin: 0vw;
+    }
+
+    section.serviciosSocioInterna.micro .contentServicios {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 50px;
+    }
+
+    section.serviciosSocioInterna.micro .contentServicios .item{
+      max-width: 274px;
+      margin: 0 auto;
+    }
+}
 
 @media (max-width: 530px) {
   footer .pie .content,
@@ -5081,7 +5367,13 @@ section.home-servicios-interna .content .part2 {
 
 @media (max-width: 440px) {
   .menupage ul li ul li {
-    font-size: 18px; } }
+    font-size: 18px; } 
+
+    section.competenciasAWS h2, section.certificaciones h2, section.designacionesAWS h2, section.novedades h2 {
+      max-width: 60%;
+    }
+  
+}
 
 @media (max-width: 425px) {
   section.socios .content .card div a {
@@ -5100,7 +5392,8 @@ section.home-servicios-interna .content .part2 {
     width: 70%; }
   section.competencias .slider-competencias .slick-prev {
     right: 55px; }
-  section.aliados .marquee-with-options .item {
+  section.aliados .marquee-with-options .item,
+  section.tecnologias .marquee-with-options .item {
     margin: 0 0px;
     display: flex;
     justify-content: center; }
@@ -5136,7 +5429,8 @@ section.home-servicios-interna .content .part2 {
   section.contact-page .content h1,
   section.blog .content h1,
   section.trabajo .content .part1 h1,
-  section.home-nosotros .content .part1 h1 {
+  section.home-nosotros .content .part1 h1,
+  section.fondo-socios.sociointerna .content .part1 h1 {
     font-size: 30px; }
   section.thanks-page .top {
     width: 44px; }
@@ -5188,4 +5482,10 @@ section.home-servicios-interna .content .part2 {
     transform: scale(0.55);
     left: -39px; }
   section.confian .grid-empresas {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); } 
+    
+    section.competenciasAWS .slider-competenciasAWS .slick-prev, section.competenciasAWS .slider-competenciasAWS .slick-next, section.certificaciones .slider-certificacionesAWS .slick-prev, section.certificaciones .slider-certificacionesAWS .slick-next, section.designacionesAWS .contentDesignaciones .slick-next, section.designacionesAWS .contentDesignaciones .slick-prev {
+      top: -61px;
+    }
+  
+  }

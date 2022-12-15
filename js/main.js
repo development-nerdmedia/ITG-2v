@@ -86,8 +86,12 @@ document.addEventListener("click", (e) => {
 
     }
 
-    if (e.target.closest(".slider-competenciasAWS .item button") || e.target.closest(".slider-designacionesMicro .item .name")) {
+    if (e.target.closest(".slider-competenciasAWS .item button")) {
         e.target.parentElement.classList.toggle("mostrar");
+    }
+
+    if (e.target.closest(".slider-designacionesMicro .item .name")) {
+        e.target.parentElement.parentElement.classList.toggle("mostrar");
     }
 
 })
@@ -960,6 +964,22 @@ $('.slider-competenciasAWS').slick({
 
     slidesToScroll: 1,
 
+    responsive: [
+        {
+
+        breakpoint: 836,
+
+            settings: {
+
+                slidesToShow: 1,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+    ]
+
 });
 
 $('.slider-certificacionesAWS').slick({
@@ -975,6 +995,48 @@ $('.slider-certificacionesAWS').slick({
     slidesToShow: 5,
 
     slidesToScroll: 1,
+
+    responsive: [
+        {
+
+            breakpoint: 1601,
+
+            settings: {
+
+                slidesToShow: 4,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+        {
+
+            breakpoint: 901,
+
+            settings: {
+
+                slidesToShow: 3,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+        {
+
+            breakpoint: 601,
+
+            settings: {
+
+                slidesToShow: 2,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+    ]
 
 });
 
@@ -992,21 +1054,66 @@ $('.contentDesignaciones').slick({
 
     slidesToScroll: 1,
 
+    responsive: [
+        {
+
+            breakpoint: 901,
+
+            settings: {
+
+                slidesToShow: 2,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+    ]
+
 });
 
 $('.slider-designacionesMicro').slick({
 
     infinite: true,
 
-    speed: 300,
+    // speed: 300,
 
     dots: false,
 
-    autoplay: true,
+    // autoplay: true,
 
     slidesToShow: 3,
 
     slidesToScroll: 1,
+
+    responsive: [
+        {
+
+            breakpoint: 1025,
+
+            settings: {
+
+                slidesToShow: 2,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+        {
+
+            breakpoint: 901,
+
+            settings: {
+
+                slidesToShow: 1,/* 1.94 */
+
+                slidesToScroll: 1,
+
+            }
+
+        },
+    ]
 
 });
 
