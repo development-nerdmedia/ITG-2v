@@ -3724,11 +3724,6 @@ section.novedades .slider-novedades {
   .formulario {
     max-width: 450px; } }
 
-.zoom150 header nav .navigation ul li {
-  display: inline-block; }
-
-.zoom150 header nav .navigation ul li.menu-mobile {
-  display: none; }
 
 @media (max-width: 1280px) {
   section.socios .content .card a span,
@@ -3919,6 +3914,9 @@ section.novedades .slider-novedades {
     section.areaSoluciones .contentList ul{
       grid-gap: 40px;
     }
+    section.areaSoluciones .contentList ul li{
+      font-size: 18px;
+    }
 
   /* END 1280 */  
 }
@@ -3955,300 +3953,6 @@ section.novedades .slider-novedades {
   }
 }
 
-.zoom150 section.socios .content .card a {
-  margin-top: 25px; }
-
-.zoom150 header {
-  padding: 14px 0; }
-
-.zoom150 .container {
-  max-width: 1000px; }
-
-.zoom150 header nav .logo img, .zoom150 header nav .logo lottie-player {
-  width: 128px; }
-
-.zoom150 header nav .navigation ul li,
-.zoom150 header nav .navigation ul li.contacto button {
-  font-size: 13px; }
-
-.zoom150 header nav .navigation ul li.contacto button {
-  padding: 10px 17px;
-  border-radius: 12px; }
-
-.zoom150 header nav .navigation ul li {
-  padding: 0px 17px; }
-
-.zoom150 header nav .navigation ul li.contacto {
-  padding-right: 0; }
-
-.zoom150 header::before {
-  height: 82.33px; }
-
-.zoom150 section.home .content {
-  width: 60%; }
-
-.zoom150 section.home .content {
-  transform: translateY(15px); }
-
-.zoom150 section.home .content p {
-  padding: 30px 0; }
-
-.zoom150 p, .zoom150 a.contacto button {
-  font-size: 13.5px; }
-
-.zoom150 a.contacto button {
-  padding: 10px 17px;
-  border-radius: 12px; }
-
-.zoom150 section.home .content p {
-  width: 58%; }
-
-.zoom150 section.home lottie-player.escritorio {
-  margin-top: 6px; }
-
-.zoom150 section.socios .content .card img {
-  width: 80%;
-  margin-bottom: 45px; }
-
-.zoom150 section.socios .content .card {
-  padding: 30px; }
-
-.zoom150 section.socios .content .animation lottie-player,
-.zoom150 section.socios .content .animation img {
-  width: 28vw; }
-
-.zoom150 section.socios .content .card {
-  width: 228px; }
-
-.zoom150 section.socios .content .card p::after {
-  top: -24px;
-  height: 2px;
-  width: 50px; }
-
-.zoom150 section.home {
-  height: 50.3vw; }
-
-.zoom150 h2 {
-  font-size: 26px; }
-
-.zoom150 h2::before {
-  transform: scale(0.7);
-  left: -28px; }
-
-.zoom150 section.socios {
-  padding: 100px 0;
-  padding-bottom: 100px; }
-
-.zoom150 section.socios h2 {
-  margin-bottom: 28px; }
-
-.zoom150 section.confian .grid-empresas {
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr);
-  padding: 0 70px;
-  padding-top: 20px;
-  grid-gap: 45px;
-  column-gap: 78px; }
-
-.zoom150 section.confian .slider-empresas {
-  display: none; }
-
-.zoom150 section.soluciones h2 {
-  margin-bottom: 25px; }
-
-.zoom150 section.soluciones .grid-soluciones {
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 35px; }
-
-.zoom150 section.soluciones .grid-soluciones .item h3::after {
-  height: 2px; }
-
-.zoom150 section.soluciones .grid-soluciones .item img,
-.zoom150 section.soluciones .grid-soluciones .item lottie-player {
-  width: 80% !important;
-  margin-bottom: 10px; }
-
-.zoom150 section.soluciones .grid-soluciones .item h3 {
-  font-size: 17px;
-  padding-top: 12px; }
-
-.zoom150 section.soluciones .grid-soluciones .item p {
-  padding-bottom: 15px; }
-
-.zoom150 section.soluciones .grid-soluciones .item p {
-  font-size: 13px;
-  padding: 11px 0; }
-
-.zoom150 section.soluciones .grid-soluciones .item a img {
-  width: 14px !important; }
-
-.zoom150 section.soluciones .grid-soluciones .item a span {
-  font-size: 13px; }
-
-.zoom150 section.soluciones .grid-soluciones .item a {
-  padding-left: 24px; }
-
-.zoom150 section.soluciones .grid-soluciones .item a:hover img {
-  left: 5px; }
-
-.zoom150 section.novedades .slider-novedades .slick-next {
-  width: 35px;
-  height: 35px;
-  right: 134px; }
-
-.zoom150 section.novedades .slider-novedades .slick-prev {
-  width: 35px;
-  height: 35px;
-  right: 185px; }
-
-.zoom150 section.novedades .slider-novedades {
-  padding-left: 117px; }
-
-.zoom150 section.novedades .slider-novedades .item {
-  border: 1.5px solid #338ECD;
-  margin: 0 14px; }
-
-.zoom150 section.novedades .slider-novedades .item .info a {
-  font-size: 13px;
-  padding: 7px 13px; }
-
-.zoom150 section.novedades .slider-novedades .item .info p {
-  font-size: 13px; }
-
-.zoom150 section.novedades .slider-novedades .item p {
-  font-size: 18px; }
-
-.zoom150 section.novedades .slider-novedades .item .btn a {
-  font-size: 13px; }
-
-.zoom150 section.novedades .slider-novedades .item .btn a img {
-  width: 15px;
-  margin-right: 0; }
-
-.zoom150 section.novedades .slider-novedades .item .btn a:hover img {
-  left: -4px; }
-
-.zoom150 section.novedades .slider-novedades .item .info {
-  padding-bottom: 20px; }
-
-.zoom150 section.novedades .slider-novedades .item p {
-  padding-bottom: 25px; }
-
-.zoom150 section.novedades .slider-novedades .item .info p {
-  padding-bottom: 0; }
-
-.zoom150 footer {
-  padding-top: 50px; }
-
-.zoom150 footer .content, .zoom150 .footer-contacto2 .content {
-  flex-wrap: initial; }
-
-.zoom150 footer .part1 ul li, .zoom150 footer .part2 p, .zoom150 footer .part3 p, .zoom150 footer .part3 a {
-  font-size: 12px; }
-
-.zoom150 footer .part1 ul li::after {
-  width: 8px;
-  height: 2px;
-  top: 15px;
-  left: -13px; }
-
-.zoom150 footer .part1 ul li {
-  padding: 9px 0; }
-
-.zoom150 footer .part1 ul li ul li {
-  padding: 0; }
-
-.zoom150 footer .part2 p {
-  padding: 8px 0; }
-
-.zoom150 footer .part2 p:first-child::after {
-  width: 8px;
-  height: 2px;
-  top: 16px;
-  left: -13px; }
-
-.zoom150 footer .part2, .zoom150 .footer-contacto2 .part2 {
-  width: 100%; }
-
-.zoom150 footer .part2 {
-  max-width: 245px;
-  padding-left: 0px; }
-
-.zoom150 footer .part1, .zoom150 .footer-contacto2 .part1 {
-  width: 100%;
-  max-width: 205px; }
-
-.zoom150 footer .part3, .zoom150 .footer-contacto2 .part3 {
-  padding-left: 0px;
-  margin-top: 0px;
-  max-width: 267px;
-  width: 100%; }
-
-.zoom150 footer .pie .content p {
-  font-size: 10px; }
-
-.zoom150 footer .pie .content .creditos a {
-  margin-left: 0; }
-
-.zoom150 footer .pie .content .creditos a img {
-  width: 38px; }
-
-.zoom150 footer .pie .content {
-  padding: 4px 0;
-  align-items: center; }
-
-.zoom150 footer .content {
-  padding-bottom: 15px; }
-
-.zoom150 footer .part2 .redes a img {
-  width: 70%; }
-
-.zoom150 footer .part3 p:first-child::after {
-  width: 8px;
-  height: 2px;
-  top: 21px;
-  left: -13px; }
-
-.zoom150 footer .part3 a::after {
-  top: 7px;
-  width: 8px;
-  height: 2px;
-  left: -13px; }
-
-.zoom150 footer .part3 p:first-child {
-  padding: 9px 0; }
-
-.zoom150 footer .part3 a {
-  margin: 8px 0; }
-
-.zoom150 footer .part3 p {
-  padding: 10px 0; }
-
-.zoom150 footer .bg-footer {
-  height: 796px; }
-
-@media (max-width: 960px) {
-  .zoom150 header nav .logo img, .zoom150 header nav .logo lottie-player {
-    width: 110px; } }
-
-@media (max-width: 874px) {
-  .zoom150 header nav .navigation ul li, .zoom150 header nav .navigation ul li.contacto button {
-    padding: 0px 12px;
-    font-size: 12px; }
-  .zoom150 header nav .navigation ul li.contacto button {
-    padding: 11px 16px;
-    border-radius: 14px; } }
-
-@media (max-width: 786px) {
-  .zoom150 header nav .navigation ul li {
-    display: none; }
-  .zoom150 header nav .navigation ul li.contacto {
-    display: block; }
-  .zoom150 header nav .navigation ul li.menu-mobile {
-    padding-right: 0;
-    display: flex; }
-    .zoom150 header nav .navigation ul li.menu-mobile img {
-      width: 33px; } }
 
 @media (max-width: 1234px) {
   section.socios .content .card {
@@ -4258,6 +3962,21 @@ section.novedades .slider-novedades {
     position: relative; }
   section.trabajo .content .part1 .img img {
     width: 100%; } }
+
+@media (max-width: 1200px) {
+  section.certificaciones .slider-certificacionesAWS .item{
+    padding: 0 30px;
+  }
+  section.designacionesAWS .contentDesignaciones .item img{
+    width: 55%;
+  }  
+}
+
+@media (max-width: 1163px) {
+  section.fondo-socios.sociointerna .content .part2 img{
+    transform: translateY(-15px);
+  } 
+}
 
 @media (max-width: 1154px) {
   section.socios .content .card div {
@@ -4795,6 +4514,9 @@ section.novedades .slider-novedades {
       display: flex;
       justify-content: center;
     }
+    section.fondo-socios.sociointerna .content .part2 img{
+      transform: translateY(0px);
+    } 
 }
 
 @media (max-width: 865px) {
@@ -5281,6 +5003,17 @@ section.home-servicios-interna .content .part2 {
   footer .bg-footer {
     height: 1475px; } }
 
+
+@media (max-width: 503px) {
+  section.fondo-socios.sociointerna.micro .bg-socioInterna img {
+    top: 51px;
+  }
+
+  section.fondo-socios.sociointerna.micro{
+    height: 770px;
+  }
+}
+
 @media (max-width: 500px) {
   .page-template-page-contacto-php .btn-contacto {
     display: none !important; }
@@ -5307,7 +5040,8 @@ section.home-servicios-interna .content .part2 {
   section.competencias .slider-competencias .slick-prev,
   section.competenciasAWS .slider-competenciasAWS .slick-prev,
   section.certificaciones .slider-certificacionesAWS .slick-prev,
-  section.designacionesAWS .contentDesignaciones .slick-prev {
+  section.designacionesAWS .contentDesignaciones .slick-prev,
+  section.designacionesMicro .slider-designacionesMicro .slick-prev {
     right: 61px; }
   header nav .navigation ul li.contacto {
     display: none; }
@@ -5468,6 +5202,12 @@ section.home-servicios-interna .content .part2 {
     font-size: 30px; }
   p {
     font-size: 16px; }
+    section.areaSoluciones .contentList ul li {
+      font-size: 16px;
+    }
+    section.areaSoluciones .contentList ul li::before{
+      top: 5px; 
+    }
   .animation-responsive lottie-player {
     width: 160%; }
   header::before {
@@ -5487,5 +5227,16 @@ section.home-servicios-interna .content .part2 {
     section.competenciasAWS .slider-competenciasAWS .slick-prev, section.competenciasAWS .slider-competenciasAWS .slick-next, section.certificaciones .slider-certificacionesAWS .slick-prev, section.certificaciones .slider-certificacionesAWS .slick-next, section.designacionesAWS .contentDesignaciones .slick-next, section.designacionesAWS .contentDesignaciones .slick-prev {
       top: -61px;
     }
+
+    section.competenciasAWS .slider-competenciasAWS .item p {
+      max-height: 68px;
+    }
   
   }
+
+@media (max-width: 375px) {
+  section.socios .content .animation a{
+    position: initial;
+    transform: none;
+  }
+}
