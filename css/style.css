@@ -4925,6 +4925,7 @@ section.home-servicios-interna .content .part2 {
     width: 50%; } 
   section.designacionesAWS .contentDesignaciones .item img {
     max-width: 80%;
+    width: auto;
   }
 }
 
