@@ -3997,6 +3997,9 @@ section.novedades .slider-novedades {
   section.designacionesAWS .contentDesignaciones .item img{
     width: 55%;
   }  
+  section.certificaciones .slider-certificacionesAWS .item img {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1163px) {
@@ -4322,6 +4325,9 @@ section.novedades .slider-novedades {
     section.designacionesMicro .slider-designacionesMicro .slick-list{
       margin: 0 6vw;
     }
+    section.certificaciones .slider-certificacionesAWS .item img {
+      width: 90%;
+    } 
 }
 
 @media (max-width: 980px) {
