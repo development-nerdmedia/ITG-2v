@@ -3613,6 +3613,13 @@ section.novedades .slider-novedades {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  section.certificaciones .slider-certificacionesAWS .item img{
+    width: 70%;
+  }
+
+  section.serviciosSocioInterna .contentServicios {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   /* END 1440 */
 
@@ -3929,6 +3936,13 @@ section.novedades .slider-novedades {
     }
     section.areaSoluciones .contentList ul li{
       font-size: 18px;
+    }
+
+    section.certificaciones .slider-certificacionesAWS .item img {
+      width: 75%;
+    }
+    section.serviciosSocioInterna .contentServicios {
+      grid-template-columns: repeat(3, 1fr);
     }
 
   /* END 1280 */  
