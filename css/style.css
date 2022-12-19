@@ -2883,18 +2883,29 @@ section.competenciasAWS .slider-competenciasAWS .item button img{
   margin-right: 10px;
 }
 
-section.competenciasAWS .slider-competenciasAWS .item p{
+section.competenciasAWS .slider-competenciasAWS .item .textoEscondido{
   max-height: 85px;
   overflow: hidden;
   transition: 0.8s linear;
 }
 
+
+/* section.competenciasAWS .slider-competenciasAWS .item p{ */
+  /* max-height: 85px;
+  overflow: hidden;
+  transition: 0.8s linear; */
+/* } */
+
 section.competenciasAWS .slider-competenciasAWS .item span.menos{
   display: none;
 }
 
-section.competenciasAWS .slider-competenciasAWS .item.mostrar p{
+/* section.competenciasAWS .slider-competenciasAWS .item.mostrar p{
     max-height: 100vh;
+} */
+
+section.competenciasAWS .slider-competenciasAWS .item.mostrar .textoEscondido{
+  max-height: 100vh;
 }
 
 section.competenciasAWS .slider-competenciasAWS .item.mostrar button img{
@@ -3897,10 +3908,12 @@ section.novedades .slider-novedades {
   section.home .content {
     transform: translateY(76px); } 
     
-
-    section.competenciasAWS .slider-competenciasAWS .item p {
+    section.competenciasAWS .slider-competenciasAWS .item .textoEscondido {
       max-height: 75px;
     }
+    /* section.competenciasAWS .slider-competenciasAWS .item p {
+      max-height: 75px;
+    } */
     
     section.competenciasAWS,
     section.designacionesMicro {
@@ -5232,7 +5245,11 @@ section.home-servicios-interna .content .part2 {
       top: -61px;
     }
 
-    section.competenciasAWS .slider-competenciasAWS .item p {
+    /* section.competenciasAWS .slider-competenciasAWS .item p {
+      max-height: 68px;
+    } */
+
+    section.competenciasAWS .slider-competenciasAWS .item .textoEscondido {
       max-height: 68px;
     }
 
