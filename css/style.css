@@ -3381,7 +3381,7 @@ section.novedades .slider-novedades {
     height: 228px;
   }
   header.sticky nav .navigation ul li.fex ul li a{
-    padding: 14px 26px;
+    padding: 14px 40px;
   }
   section.proteccion {
     padding-bottom: 50px; }
@@ -3631,6 +3631,9 @@ section.novedades .slider-novedades {
     padding-top: 14px;
     width: 163px;
     height: 100%;
+  }
+  header.sticky nav .navigation ul li.fex ul li a {
+    padding: 14px 26px;
   }
 }
 
