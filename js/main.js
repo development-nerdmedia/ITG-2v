@@ -50,7 +50,7 @@ document.addEventListener("click", (e) => {
 
         $('.top a').attr("href", link);
 
-    }
+    }    
 
     if (e.target.closest(".menu-mobile")) {
 
@@ -97,9 +97,6 @@ document.addEventListener("click", (e) => {
 })
 
 
-
-
-
 var formespacio = document.querySelectorAll('.form-group');
 
 var formespacioinput = document.querySelectorAll('.form-input');
@@ -125,6 +122,7 @@ MyApp = {
                 else {
 
                     document.querySelector("header").classList.remove("sticky");
+                    
                 }
 
             });
@@ -143,27 +141,27 @@ MyApp = {
 
             $(document).on("wheel", "input[type=number]", function (e) { $(this).blur(); });
 
-            function inputcheck() {
+            function inputcheck(){
 
                 for (let i = 0; i < formespacioinput.length; i++) {
 
-                    if (!formespacioinput[i].value) {
+                        if (!formespacioinput[i].value) {                            
 
-                        formespacioinput[i].parentElement.parentElement.classList.remove("ok");
+                            formespacioinput[i].parentElement.parentElement.classList.remove("ok");                           
 
-                    } else {
+                        }else{
 
-                        formespacioinput[i].parentElement.parentElement.classList.add("ok");
+                            formespacioinput[i].parentElement.parentElement.classList.add("ok");   
 
-                    }
+                        }
 
-                }
+                }   
 
-            }
+            }        
 
+            
 
-
-            function validateInput(e) {
+            function validateInput(e){
 
                 for (let y = 0; y < formespacioinput.length; y++) {
 
@@ -173,9 +171,9 @@ MyApp = {
 
                         formespacioinput[y].parentElement.parentElement.classList.add("error");
 
-                        e.preventDefault();
+                        e.preventDefault();              
 
-                    } else {
+                    }else{
 
                         formespacioinput[y].parentElement.parentElement.querySelector("span.span-animation").classList.remove("falto");
 
@@ -189,17 +187,17 @@ MyApp = {
 
 
 
-            function validateCheckbox(e) {
+            function validateCheckbox(e){
 
-                if ($('#terminos').is(':checked')) {
+                if ($('#terminos').is(':checked')) {   
 
-                    document.querySelector(".checkbox-box").classList.remove("falto");
+                    document.querySelector(".checkbox-box").classList.remove("falto");     
 
-                } else {
+                }else{
 
                     document.querySelector(".checkbox-box").classList.add("falto");
 
-                    e.preventDefault();
+                    e.preventDefault();   
 
                 }
 
@@ -207,7 +205,7 @@ MyApp = {
 
             // wpcf7-select
 
-            function validateSelect(e) {
+            function validateSelect(e){
 
                 var info = document.querySelectorAll("form [validate]");
 
@@ -227,7 +225,7 @@ MyApp = {
 
                         }
 
-
+                        
 
                     }
 
@@ -251,18 +249,18 @@ MyApp = {
 
             var formespacioinput2 = document.querySelectorAll('.form-input');
             // var formespacioinput2 = document.getElementsByClassName("form-input");
-
+            
             $('.form-input').on('change', () => {
-                formespacioinput2.forEach(element => {
+                formespacioinput2.forEach(element => {       
                     if (!element.value == "") {
-                        element.parentElement.parentElement.classList.add("ok");
-                    } else {
-                        element.parentElement.parentElement.classList.remove("ok");
+                        element.parentElement.parentElement.classList.add("ok");  
+                    }else{
+                        element.parentElement.parentElement.classList.remove("ok");  
                     }
                 });
             });
 
-
+            
 
             // function subirLabel(){
             //     for (let i = 0; i < formespacioinput.length; i++) {                        
@@ -298,32 +296,32 @@ MyApp = {
 
             document.addEventListener("click", function (e) {
                 // subirLabel(e)
-                //     if (e.which == 1){
-                //         console.log("asdasdasdas");
-                //    }
+            //     if (e.which == 1){
+            //         console.log("asdasdasdas");
+            //    }
                 if (e.target.closest(".form-input")) {
 
                     formespacio.forEach(function (shinyItem) {
 
                         shinyItem.classList.remove("focusin");
 
-                        shinyItem.querySelector("span.span-animation").classList.remove("animacion");
+                        shinyItem.querySelector("span.span-animation").classList.remove("animacion");  
 
                     });
 
-                    e.target.parentElement.parentElement.classList.add("focusin");
+                    e.target.parentElement.parentElement.classList.add("focusin"); 
 
-                    e.target.parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");
+                    e.target.parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");                     
 
-                } else {
+                }else{
 
                     formespacio.forEach(function (shinyItem) {
 
                         shinyItem.classList.remove("focusin");
 
-                    });
+                    });               
 
-                }
+                } 
 
                 if (e.target.closest("form select")) {
 
@@ -331,11 +329,11 @@ MyApp = {
 
                     formespacioselect.forEach(function (shinyItem2) {
 
-                        shinyItem2.parentElement.parentElement.parentElement.classList.remove("open");
+                        shinyItem2.parentElement.parentElement.parentElement.classList.remove("open");  
 
-                        shinyItem2.parentElement.parentElement.parentElement.classList.remove("focusin");
+                        shinyItem2.parentElement.parentElement.parentElement.classList.remove("focusin");  
 
-                        shinyItem2.parentElement.parentElement.parentElement.querySelector("span.span-animation").classList.remove("animacion");
+                        shinyItem2.parentElement.parentElement.parentElement.querySelector("span.span-animation").classList.remove("animacion");  
 
                     });
 
@@ -345,34 +343,34 @@ MyApp = {
 
                     e.target.parentElement.parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");
 
-                } else {
+                }else{
 
                     formespacioselect.forEach(function (shinyItem2) {
 
-                        shinyItem2.parentElement.parentElement.parentElement.classList.remove("open");
+                        shinyItem2.parentElement.parentElement.parentElement.classList.remove("open");  
 
                     });
 
                 }
 
-                inputcheck()
+                inputcheck() 
 
-                if (e.target.closest("form button")) {
+                if (e.target.closest("form button")) {     
 
                     validateInput(e)
 
-                    validateSelect(e)
+                    validateSelect(e)     
 
-                    validateCheckbox(e)
+                    validateCheckbox(e)               
 
                 }
             })
-            document.addEventListener("keydown", function (event) {
+            document.addEventListener("keydown", function(event) {
                 if (event.keyCode == 9) {
-                    for (let i = 0; i < formespacioinput.length; i++) {
+                    for (let i = 0; i < formespacioinput.length; i++) {                        
                         formespacioinput[i].addEventListener('focusin', (event) => {
                             formespacioinput[i].parentElement.parentElement.classList.add('focusin');
-                            formespacioinput[i].parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");
+                            formespacioinput[i].parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");  
                         });
                         formespacioinput[i].addEventListener('focusout', (event) => {
                             formespacioinput[i].parentElement.parentElement.classList.remove('focusin');
@@ -386,7 +384,7 @@ MyApp = {
                 // if (event.keyCode == 9) {
                 //     console.log("");
                 // }
-
+                
             })
         }
 
@@ -416,13 +414,10 @@ MyApp = {
 
         init: function () {
 
-            document.querySelector("#categorias li a").classList.add("select");
+            /*document.querySelector("#categorias li a").classList.add("select");
 
             $(`.destacado`).hide();
 
-
-
-            /*
             var categoriaNovedad = localStorage.getItem("CatNovedad");
 
             if (categoriaNovedad == "none") {
@@ -549,13 +544,13 @@ MyApp = {
 
     },
 
-    slider_aliados: {
+    slider_aliados: {        
 
         init: function () {
 
             var mediaqueryList = window.matchMedia("(max-width: 768px)");
 
-
+            
 
             if (mediaqueryList.matches) {
 
@@ -573,7 +568,7 @@ MyApp = {
 
                 });
 
-            } else {
+            } else{
 
                 $('.marquee-with-options').marquee({
 
@@ -614,10 +609,6 @@ MyApp = {
     }
 
 }
-
-
-
-
 
 if ($('header').length > 0) {
 
@@ -689,15 +680,6 @@ if ($('.tecnologias').length > 0) {
 
 }
 
-var mediaqueryList = window.matchMedia("(max-width: 425px)");
-var textosSlider = document.querySelectorAll('section.competenciasAWS .slider-competenciasAWS .item p');
-
-
-if (mediaqueryList.matches) {
-    for (let i = 0; i < textosSlider.length; i++) {
-        textosSlider[i].style.fontSize = '16px'
-    }
-}
 
 
 $('.slider-empresas').slick({
@@ -912,7 +894,7 @@ $('.slider-competencias').slick({
 
             }
 
-        }, {
+        },{
 
             breakpoint: 1200,
 
@@ -976,7 +958,7 @@ $('.slider-competenciasAWS').slick({
     responsive: [
         {
 
-            breakpoint: 836,
+        breakpoint: 836,
 
             settings: {
 
@@ -995,11 +977,11 @@ $('.slider-certificacionesAWS').slick({
 
     infinite: true,
 
-    speed: 300,
+    // speed: 300,
 
     dots: false,
 
-    autoplay: true,
+    // autoplay: true,
 
     slidesToShow: 5,
 
