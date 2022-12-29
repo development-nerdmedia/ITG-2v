@@ -16,13 +16,8 @@
 
 header nav .navigation ul li.fex ul,
 header nav .navigation ul li.fex::after {
-  display: none; 
-  /* display: flex; */
-}
-
-.home header nav .navigation ul li.fex ul,
-.home header nav .navigation ul li.fex::after{
-  display: flex; 
+  /* display: none;  */
+  display: flex;
 }
 
 /* globales */
@@ -151,11 +146,10 @@ header nav .logo a:hover lottie-player {
 header nav .navigation ul {
   list-style: none; }
 
-.home header nav .navigation ul:hover li.fex ul,
-header nav .navigation ul li.fex:hover ul {
+header nav .navigation ul:hover li.fex ul {
   display: flex; }
 
-.home header nav .navigation ul:hover li.fex::after {
+header nav .navigation ul:hover li.fex::after {
   display: block; }
 
 header nav .navigation ul li {
@@ -254,21 +248,6 @@ header nav .navigation ul li.fex a.hvr-underline-from-left::after {
   filter: drop-shadow(0px 0px 10px rgba(51, 142, 205, 0.35));
   z-index: -1;}
 
-  .home header nav .navigation ul li.fex a.hvr-underline-from-left::after{
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
-  header nav .navigation ul li.fex a.hvr-underline-from-left::after{
-    opacity: 0;
-    transform: translateX(-50%) translateY(15px);
-  }
-
-  header nav .navigation ul li.fex:hover a.hvr-underline-from-left::after{
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
   header.sticky nav .navigation ul li.fex a.hvr-underline-from-left::after{
     content: none;
   }
@@ -288,23 +267,6 @@ header nav .navigation ul li.fex ul {
   animation-name: animacionMenu;
   animation-duration: 1s;
   animation-fill-mode: forwards; }
-
-  .home header nav .navigation ul li.fex ul {
-    opacity: 1;
-    filter: drop-shadow(0px 0px 10px rgba(51, 142, 205, 0.35));
-    transform: translateX(-47.5%) translateY(0);
-  }
-
-  header nav .navigation ul li.fex ul {
-    opacity: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transform: translateX(-47.5%) translateY(15px);
-  }
-
-  header nav .navigation ul li.fex:hover ul{
-    opacity: 1;
-    transform: translateX(-47.5%) translateY(0px);
-  }
 
 header nav .navigation ul li.fex ul li {
   background-color: #fff;
@@ -369,18 +331,14 @@ header::before {
   position: fixed;
   left: 0;
   top: 0;
-  height: 126px;
-  /* height: 246px; */
+  /* height: 126px; */
+  height: 246px;
   width: 100%;
   background: #fff;
   z-index: -2;
   transition: transform 0.1s ease;
   transform: translateY(-135%);
   filter: drop-shadow(0px 4px 39px rgba(51, 142, 205, 0.39)); }
-
-  .home header::before {
-    height: 246px;
-  }
 
   header.sticky nav .navigation ul li.fex::after{
     content: none;
@@ -396,7 +354,7 @@ header::before {
   }
 
 
-.home header.sticky::after{
+header.sticky::after{
   content: '';
   position: fixed;
   left: 0;
@@ -1474,10 +1432,8 @@ section.home-servicios-interna .content {
 
 section.home-servicios-interna .content .part1 {
   width: 50%;
-  /* width: 100%; */
-  padding-right: 50px; 
-  padding-right: 140px; 
-}
+  width: 100%;
+  padding-right: 50px; }
 
 section.home-servicios-interna .content .part1 lottie-player, section.home-servicios-interna .content .part1 img {
   width: 228px !important;
@@ -1489,22 +1445,20 @@ section.home-servicios-interna .content .part1 h1 {
   font-size: 60px;
   color: var(--color-celeste);
   padding-top: 20px;
-  /* text-align: center;  */
-}
+  text-align: center; }
 
 section.home-servicios-interna .content .part1 h1 br {
   display: none; }
 
 section.home-servicios-interna .content .part1 p {
   padding-top: 10px;
-  /* text-align: center;  */
-}
+  text-align: center; }
 
 section.home-servicios-interna .content .part1 .contenido {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column; }
 
 section.home-servicios-interna .content .part2 {
@@ -1514,7 +1468,7 @@ section.home-servicios-interna .content .part2 {
   background-color: var(--color-celeste);
   border-radius: 10px;
   padding: 30px;
-  max-width: 600px;
+  max-width: 675px;
   margin: 0 auto; }
 
 .formulario span.wpcf7-not-valid-tip,
@@ -2396,11 +2350,6 @@ section.footer-contacto .flex p {
   position: relative;
   color: var(--color-gris); }
 
-  .single-solucion input:-webkit-autofill, .single-solucion input:-webkit-autofill:hover, .single-solucion input:-webkit-autofill:focus, .single-solucion input:-webkit-autofill:active, .single-solucion input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #338ecd inset !important;
-    -webkit-text-fill-color: #fff;
-  }
-
 section.footer-contacto .flex .soporte a {
   display: block;
   margin-top: 13px;
@@ -2934,18 +2883,29 @@ section.competenciasAWS .slider-competenciasAWS .item button img{
   margin-right: 10px;
 }
 
-section.competenciasAWS .slider-competenciasAWS .item p{
+section.competenciasAWS .slider-competenciasAWS .item .textoEscondido{
   max-height: 85px;
   overflow: hidden;
   transition: 0.8s linear;
 }
 
+
+/* section.competenciasAWS .slider-competenciasAWS .item p{ */
+  /* max-height: 85px;
+  overflow: hidden;
+  transition: 0.8s linear; */
+/* } */
+
 section.competenciasAWS .slider-competenciasAWS .item span.menos{
   display: none;
 }
 
-section.competenciasAWS .slider-competenciasAWS .item.mostrar p{
+/* section.competenciasAWS .slider-competenciasAWS .item.mostrar p{
     max-height: 100vh;
+} */
+
+section.competenciasAWS .slider-competenciasAWS .item.mostrar .textoEscondido{
+  max-height: 100vh;
 }
 
 section.competenciasAWS .slider-competenciasAWS .item.mostrar button img{
@@ -3408,9 +3368,6 @@ section.novedades .slider-novedades {
     width: 36.02vw; } }
 
 @media (max-width: 1440px) {
-  section.home-servicios-interna .content {
-    align-items: flex-start;
-  }
   section.fondo-socios {
     margin-top: 100px;
   }
@@ -3424,7 +3381,7 @@ section.novedades .slider-novedades {
     height: 228px;
   }
   header.sticky nav .navigation ul li.fex ul li a{
-    padding: 14px 26px;
+    padding: 14px 40px;
   }
   section.proteccion {
     padding-bottom: 50px; }
@@ -3656,6 +3613,13 @@ section.novedades .slider-novedades {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  section.certificaciones .slider-certificacionesAWS .item img{
+    width: 70%;
+  }
+
+  section.serviciosSocioInterna .contentServicios {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   /* END 1440 */
 
@@ -3667,6 +3631,9 @@ section.novedades .slider-novedades {
     padding-top: 14px;
     width: 163px;
     height: 100%;
+  }
+  header.sticky nav .navigation ul li.fex ul li a {
+    padding: 14px 26px;
   }
 }
 
@@ -3951,10 +3918,12 @@ section.novedades .slider-novedades {
   section.home .content {
     transform: translateY(76px); } 
     
-
-    section.competenciasAWS .slider-competenciasAWS .item p {
+    section.competenciasAWS .slider-competenciasAWS .item .textoEscondido {
       max-height: 75px;
     }
+    /* section.competenciasAWS .slider-competenciasAWS .item p {
+      max-height: 75px;
+    } */
     
     section.competenciasAWS,
     section.designacionesMicro {
@@ -3970,6 +3939,13 @@ section.novedades .slider-novedades {
     }
     section.areaSoluciones .contentList ul li{
       font-size: 18px;
+    }
+
+    section.certificaciones .slider-certificacionesAWS .item img {
+      width: 75%;
+    }
+    section.serviciosSocioInterna .contentServicios {
+      grid-template-columns: repeat(3, 1fr);
     }
 
   /* END 1280 */  
@@ -4024,6 +4000,9 @@ section.novedades .slider-novedades {
   section.designacionesAWS .contentDesignaciones .item img{
     width: 55%;
   }  
+  section.certificaciones .slider-certificacionesAWS .item img {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1163px) {
@@ -4349,6 +4328,9 @@ section.novedades .slider-novedades {
     section.designacionesMicro .slider-designacionesMicro .slick-list{
       margin: 0 6vw;
     }
+    section.certificaciones .slider-certificacionesAWS .item img {
+      width: 90%;
+    } 
 }
 
 @media (max-width: 980px) {
@@ -5286,7 +5268,11 @@ section.home-servicios-interna .content .part2 {
       top: -61px;
     }
 
-    section.competenciasAWS .slider-competenciasAWS .item p {
+    /* section.competenciasAWS .slider-competenciasAWS .item p {
+      max-height: 68px;
+    } */
+
+    section.competenciasAWS .slider-competenciasAWS .item .textoEscondido {
       max-height: 68px;
     }
 
