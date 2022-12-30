@@ -264,6 +264,16 @@ MyApp = {
                 });
             });
 
+            $('.form-group textarea').on('change', () => {    
+                    if (!formespaciotextarea.value == "") {
+                        formespaciotextarea.parentElement.parentElement.classList.add("ok");  
+                    }else{
+                        formespaciotextarea.parentElement.parentElement.classList.remove("ok");  
+                    }
+            });
+
+
+
             
 
             // function subirLabel(){

@@ -5224,6 +5224,9 @@ section.home-servicios-interna .content .part2 {
     section.competenciasAWS .slider-competenciasAWS .item p{
       font-size: 18px !important;
     }
+    .single-solucion section.fondo-interna .bg-interna {
+      height: calc(100% + 731px);
+    }  
 }
 
 @media (max-width: 530px) {
