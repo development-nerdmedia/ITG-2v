@@ -101,6 +101,8 @@ var formespacio = document.querySelectorAll('.form-group');
 
 var formespacioinput = document.querySelectorAll('.form-input');
 
+var formespaciotextarea = document.querySelector('.form-group textarea');
+
 var formespacioselect = document.querySelectorAll('form select');
 
 
@@ -172,6 +174,8 @@ MyApp = {
                         formespacioinput[y].parentElement.parentElement.classList.add("error");
 
                         e.preventDefault();              
+
+
 
                     }else{
 
@@ -323,6 +327,13 @@ MyApp = {
 
                 } 
 
+                if (e.target.closest(".form-group textarea")) {
+                    e.target.parentElement.parentElement.classList.add("focusin"); 
+
+                    e.target.parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");                     
+                    
+                }
+
                 if (e.target.closest("form select")) {
 
                     // console.log(formespacioselect);
@@ -380,6 +391,10 @@ MyApp = {
                             }
                         });
                     }
+                    formespaciotextarea.addEventListener('focusin', (event) => {
+                        formespaciotextarea.parentElement.parentElement.classList.add('focusin');
+                        formespaciotextarea.parentElement.parentElement.querySelector("span.span-animation").classList.add("animacion");  
+                    });
                 }
                 // if (event.keyCode == 9) {
                 //     console.log("");

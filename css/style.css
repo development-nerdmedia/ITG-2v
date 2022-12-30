@@ -4169,6 +4169,7 @@ section.novedades .slider-novedades {
   section.socios .content .animation img {
     width: auto;
     max-width: 453px;
+    width: 100% !important;
     margin: 0 auto; } }
 
 @media (max-width: 1140px) {
